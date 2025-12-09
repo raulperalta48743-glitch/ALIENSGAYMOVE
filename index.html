@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliens Pendejos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <div class="col-xs-12 header_div text-center">
+        <h2>Aliens controlados por sonidos</h2>
+        <p>Nota: reproduce diferentes sonidos como aplausos, chasquidos, o campanas para hacer bailar a los aliens.</p>
+    </div>
+    <div class="main_div">
+        <center>
+            <br>
+            <button class="btn btn-warning" onclick="startClassification();"> COMENZAR </button>
+            <h3 id="result_label">Escucho - </h3>
+            <h4 id="result_confidence">Precision - </h4>
+                <br>
+                <img src="aliens-01.png" id="alien1" class="alien" alt="Alien 1">
+                <img src="aliens-02.png" id="alien2" class="alien" alt="Alien 2">
+                <img src="aliens-03.png" id="alien3" class="alien" alt="Alien 3">
+                <img src="aliens-04.png"  id="alien4" class="alien" alt="Alien 4">
+        </center>
+    </div>
+    <div class="copyright">
+        <p>Desarrollado por Juan Carlos Abel Castañeda Contreras</p>
+    </div>
+    <script src="comienzo.js"></script>
+</body>
+</html>

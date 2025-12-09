@@ -1,0 +1,46 @@
+body {
+    font-family: 'Special Elite', cursive;
+    background: #ffffff;
+}
+
+.header_div {
+    background-color: #6e5f5d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main_div {
+    padding: 20px;
+}
+
+.main_div center {
+    display: block;
+}
+
+.alien {
+    width: 220px;
+    height: 220px;
+    margin: 8px;
+    display: inline-block;
+    transition: transform 200ms ease, box-shadow 200ms ease, opacity 200ms ease;
+    opacity: 0.85;
+}
+
+.alien.active {
+    transform-origin: center bottom;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+    opacity: 1;
+    animation: bounce 800ms ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0) scale(1); }
+    30% { transform: translateY(-20px) scale(1.12); }
+    60% { transform: translateY(-6px) scale(1.06); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+#result_label, #result_confidence {
+    margin: 8px 0;
+}
